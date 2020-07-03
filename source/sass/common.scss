@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "HarmoniaSansProCyr";
+  src:
+    url("../fonts/HarmoniaSansProCyr-Regular.woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HarmoniaSansProCyr";
+  src:
+    url("../fonts/HarmoniaSansProCyr-Bold.woff");
+  font-weight: bold;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+picture {
+  display: block;
+  line-height: 0;
+}
+
+body {
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "HarmoniaSansProCyr", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: left;
+  color: $black;
+}

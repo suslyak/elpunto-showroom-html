@@ -1,0 +1,10 @@
+@mixin clear-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin wrapper() {
+  margin-left: auto;
+  margin-right: auto;
+}
