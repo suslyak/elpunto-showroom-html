@@ -1,0 +1,20 @@
+.logo {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  width: 387px;
+  height: 89px;
+  background-image: url("../img/logo.png");
+  background-size: 387px 89px;
+  background-repeat: none;
+
+  @media (max-width: $tablet-width) {
+    width: 193px;
+    height: 44px;
+    background-size: 193px 44px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-left: 15px;
+  }
+}

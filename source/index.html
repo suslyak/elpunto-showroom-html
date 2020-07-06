@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Шоурум Elpunto</title>
-  <meta name="description" content="туры в антарктику">
+  <meta name="description" content="сайт шоурума Elpunto">
   <meta name="keywords" content="шоурум, elpunto, одежда, купальник, халат, бельё">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
@@ -19,42 +19,80 @@
   <div style="display: none">
     <include src="build/img/sprite_auto.svg"></include>
   </div>
-  <header class="page-header page-header--no-js">
-    <a class="logo logo--no-js" href="index.html" aria-label="Логотип Elpunto">
-    </a>
-    <nav class="page-header__navigation page-header__navigation--no-js">
-      <ul class="main-menu main-menu--no-js">
-        <li class="main-menu__item"><a class="main-menu__link" href="#advantages">Преимущества </a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#travel">Направления</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#tours">Ближайшие круизы</a></li>
-        <li class="main-menu__item"><a class="main-menu__link" href="#contacts">Контакты</a></li>
-      </ul>
-    </nav>
-    <button class="page-header__sandwich page-header__sandwich--no-js" aria-label="открыть или закрыть меню" type="button"></button>
-  </header>
-  <main>
-  </main>
+  <div class="top-wrapper">
+    <header class="page-header page-header--no-js">
+      <a class="logo logo--no-js" href="index.html" aria-label="Логотип Elpunto">
+      </a>
+      <nav class="page-header__navigation page-header__navigation--no-js">
+        <ul class="main-menu main-menu--no-js">
+          <li class="main-menu__item"><a class="main-menu__link" href="#advantages">Компания</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#travel">Бренды</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#tours">Условия работы</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#contacts">Контакты</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="#contacts">Войти</a></li>
+        </ul>
+      </nav>
+      <button class="page-header__sandwich page-header__sandwich--no-js" aria-label="открыть или закрыть меню" type="button"></button>
+    </header>
+    <main>
+      <section class="brands">
+        <ul class="brands_brands-list">
+          <li class="brands_brands-list-item">
+            <a href="#">
+              <img src="img/massana-logo.png" alt="massana лого">
+            </a>
+          </li>
+          <li class="brands_brands-list-item">
+            <a href="#">
+              <img src="img/ym-logo.png" alt="ym лого">
+            </a>
+          </li>
+          <li class="brands_brands-list-item">
+            <a href="#">
+              <img src="img/jaycris-logo.png" alt="jaycris лого">
+            </a>
+          </li>
+          <li class="brands_brands-list-item">
+            <a href="#">
+              <img src="img/rosch-logo.png" alt="rosch лого">
+            </a>
+          </li>
+          <li class="brands_brands-list-item">
+            <a href="#">
+              <img src="img/tessy.png" alt="tessy лого">
+            </a>
+          </li>
+          <li class="brands_brands-list-item">
+            <a href="#">
+              <img src="img/roidal-logo.png" alt="roidal лого">
+            </a>
+          </li>
+          <li class="brands_brands-list-item">
+            <a href="#">
+              <img src="img/feraud-logo.png" alt="feraud лого">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
   <footer class="page-footer">
     <a class="logo" href="index.html" aria-label="Логотип Elpuno">
     </a>
     <ul class="page-footer__navigation">
-      <li class="page-footer__menuitem"><a class="page-footer__menulink" href="#advantages">Преимущества </a></li>
-      <li class="page-footer__menuitem"><a class="page-footer__menulink" href="#courses">Направления</a></li>
-      <li class="page-footer__menuitem"><a class="page-footer__menulink" href="#cruises">Ближайшие круизы</a></li>
-      <li class="page-footer__menuitem"><a class="page-footer__menulink" href="#contacts">Контакты</a></li>
     </ul>
     <ul class="page-footer__social-links">
       <li>
         <a href="#" aria-label="Elpunto на facebook">
           <svg class="page-footer__social-icon" width="53" height="53">
-            <use xlink:href="#icon-fb"></use>
+            <use xlink:href="img/sprite_auto.svg#icon-fb"></use>
           </svg>
         </a>
       </li>
       <li>
         <a href="#" aria-label="Elpunto в instagram">
           <svg class="page-footer__social-icon" width="54" height="53">
-            <use xlink:href="#icon-instagram"></use>
+            <use xlink:href="img/sprite_auto.svg#icon-insta"></use>
           </svg>
         </a>
       </li>

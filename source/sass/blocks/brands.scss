@@ -1,0 +1,39 @@
+.brands {
+  display: flex;
+  padding: 66px 110px;
+}
+
+.brands_brands-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @include clear-ul;
+}
+
+.brands_brands-list-item {
+  width: 270px;
+  height: 270px;
+  margin-right: 45px;
+  margin-top: 63px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 30px;
+
+  &:nth-child(-n+4) {
+    margin-top: 0;
+  }
+
+  &:nth-child(4n+4) {
+    margin-right: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

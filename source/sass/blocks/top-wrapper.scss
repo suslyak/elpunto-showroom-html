@@ -1,0 +1,26 @@
+.top-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  background: url("../img/index-desktop-bg.jpg") no-repeat 50% 0%/cover $blue;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-desktop-bg@2x.jpg");
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/index-tablet-bg.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-tablet-bg@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/index-mobile-bg.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-mobile-bg@2x.jpg");
+    }
+  }
+}
