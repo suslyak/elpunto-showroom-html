@@ -1,15 +1,33 @@
 .brands {
   display: flex;
-  padding: 66px 110px;
+  padding: 66px 65px 96px 110px;
+
+  @media (max-width: $tablet-width) {
+    padding: 66px 35px 96px 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 30px 0 96px 30px;
+  }
 }
 
 .brands_brands-list {
+  width: 100%;
   display: flex;
+  position: relative;
+  left: 45px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
   @include clear-ul;
+  margin-left: -45px;
+  margin-top: -60px;
+
+  @media (max-width: $mobile-width) {
+    left: 30px;
+    margin-left: -30px;
+    margin-top: 0;
+  }
 }
 
 .brands_brands-list-item {
@@ -25,15 +43,33 @@
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 30px;
 
-  &:nth-child(-n+4) {
+  /*&:nth-child(-n+4) {
     margin-top: 0;
-  }
+  }*/
 
-  &:nth-child(4n+4) {
+  /*&:nth-child(4n+4) {
     margin-right: 0;
-  }
-
+  }*/
+/*
   &:last-child {
     margin-right: 0;
+  }*/
+
+/*
+  a {
+    display: block;
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }*/
+
+  @media (max-width: $tablet-width) {
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-right: 30px;
+    margin-top: 30px;
   }
 }

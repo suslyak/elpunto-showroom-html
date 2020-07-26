@@ -15,6 +15,23 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-left: 15px;
+
+  }
+
+  &--dark {
+    width: 333px;
+    height: 77px;
+    background-image: url("../img/icon-logo-dark.svg");
+    background-size: 333px 77px;
+
+    @media (max-width: $tablet-width) {
+      width: 167px;
+      height: 39px;
+      background-size: 167px 39px;
+    }
+
+    @media (max-width: $mobile-width) {
+
+    }
   }
 }
