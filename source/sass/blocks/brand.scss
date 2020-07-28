@@ -1,0 +1,255 @@
+.brand {
+  display: flex;
+  flex-direction: column;
+  padding: 55px 110px 50px 110px;
+
+  @media (max-width: $tablet-width) {
+    padding: 40px 80px 50px 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 30px 30px 50px 30px;
+    justify-content: center;
+  }
+}
+
+.brand__info {
+  width: 75%;
+  font-size: 20px;
+  font-weight: normal;
+  margin-bottom: 30px;
+  color: $black-inc;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  h3 {
+    margin-bottom: 15px;
+    color: $gray-inc;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -1.28px;
+    text-transform: uppercase;
+
+    @media (max-width: $mobile-width) {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    margin: 25px 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    @include clear-ul;
+  }
+
+  li {
+    &::before {
+      content: "-";
+    }
+  }
+
+  ul {
+    display: inline-block;
+    padding-right: 10px;
+  }
+
+  span {
+    &::after {
+      content: "\A";
+    }
+  }
+  p,
+  span,
+  ul {
+    background: rgba(255, 255, 255, .15) border-box;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+  }
+}
+
+.brand__title {
+  max-width: 573px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $tablet-width) {
+    max-width: 290px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 290px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin-top: 30px;
+    margin-left: 16px;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 75px;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    margin-left: 13px;
+
+    @media (max-width: $tablet-width) {
+    }
+
+    @media (max-width: $mobile-width) {
+      margin: 0 auto;
+    }
+  }
+}
+
+.brand__logo {
+  display: block;
+  margin-left: 13px;
+
+  @media (max-width: $tablet-width) {
+    width: 290px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto;
+    width: 260px;
+  }
+}
+
+.brand__matreials {
+  h2 {
+    margin-bottom: 15px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -1.28px;
+    text-transform: uppercase;
+    color: $gray-inc;
+
+    @media (max-width: $mobile-width) {
+      font-size: 20px;
+    }
+  }
+
+  h3,
+  h4 {
+    margin: 0;
+    font-size: 15.5px;
+    font-weight: normal;
+    letter-spacing: -0.62px;
+    line-height: 19px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, .15) border-box;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+  }
+
+  img {
+    margin-bottom: 10px;
+  }
+}
+
+.brand__materials-list {
+  position: relative;
+  left: 42px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include clear-ul;
+
+  margin-left: -42px;
+  margin-top: -40px;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    left: 15px;
+    margin-left: -15px;
+    margin-top: -20px;
+  }
+
+  li {
+    width: 168px;
+    margin-top: 40px;
+    margin-right: 42px;
+
+    @media (max-width: $tablet-width) {
+
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-right: 15px;
+      margin-top: 20px;
+    }
+  }
+
+  img {
+    width: 168px;
+    height: 231px;
+  }
+}
+
+.brand__docs {
+  h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    letter-spacing: -1.2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $gray-inc;
+  }
+
+  h3 {
+    font-size: 24.5px;
+    font-weight: normal;
+    letter-spacing: -0.98px;
+    margin: 20px 0 5px;
+  }
+}
+
+.brand__docs-list {
+  @include clear-ul;
+
+  li {
+    margin-top: 7px;
+    font-size: 24.5px;
+    font-weight: normal;
+    letter-spacing: -0.98px;
+
+    &:first-child {
+     margin-top: 0;
+    }
+  }
+
+  a {
+    color: $black-inc;
+    background: rgba(255, 255, 255, .15) border-box;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    padding-right: 10px;
+
+    &:visited {
+      color: $black-inc;
+    }
+
+    &:hover {
+      color: $black-inc;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+

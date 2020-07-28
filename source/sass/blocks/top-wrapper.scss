@@ -25,4 +25,179 @@
       background-image: url("../img/index-desktop-bg@2x.jpg");
     }
   }
+
+  &--massana {
+    background-image: url("../img/massana-desktop-bg@2x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/massana-desktop-bg@2x.jpg");
+    }
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/massana-desktop-bg.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/massana-desktop-bg@2x.jpg");
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../img/massana-desktop-bg.jpg");
+      background-position: 57% 0;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/massana-desktop-bg@2x.jpg");
+      }
+    }
+  }
+
+  &--ym {
+    background-image: url("../img/ym-desktop-bg@2x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/ym-desktop-bg@2x.jpg");
+    }
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/ym-desktop-bg.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/ym-desktop-bg@2x.jpg");
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../img/ym-desktop-bg.jpg");
+      background-position: 65% 0;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/ym-desktop-bg@2x.jpg");
+      }
+    }
+  }
+
+  &--jaycris {
+    background-image: url("../img/jc-desktop-bg@2x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/jc-desktop-bg@2x.jpg");
+    }
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/jc-desktop-bg.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/jc-desktop-bg@2x.jpg");
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../img/jc-desktop-bg.jpg");
+      background-position: 65% 0;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/jc-desktop-bg@2x.jpg");
+      }
+    }
+  }
+
+  &--rosch {
+    background-image: url("../img/rosch-desktop-bg@2x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/rosch-desktop-bg@2x.jpg");
+    }
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/rosch-desktop-bg.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/rosch-desktop-bg@2x.jpg");
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../img/rosch-desktop-bg.jpg");
+      background-position: 65% 0;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/rosch-desktop-bg@2x.jpg");
+      }
+    }
+  }
+
+  &--tessy {
+    background-image: url("../img/tessy-desktop-bg@2x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/tessy-desktop-bg@2x.jpg");
+    }
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/tessy-desktop-bg.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/tessy-desktop-bg@2x.jpg");
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../img/tessy-desktop-bg.jpg");
+      background-position: 65% 0;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/tessy-desktop-bg@2x.jpg");
+      }
+    }
+  }
+
+  &--roidal {
+    background-image: url("../img/roidal-desktop-bg@2x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/roidal-desktop-bg@2x.jpg");
+    }
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/roidal-desktop-bg.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/roidal-desktop-bg@2x.jpg");
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../img/roidal-desktop-bg.jpg");
+      background-position: 65% 0;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/roidal-desktop-bg@2x.jpg");
+      }
+    }
+  }
+
+  &--feraud {
+    background-image: url("../img/feraud-desktop-bg@2x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/feraud-desktop-bg@2x.jpg");
+    }
+
+    @media (max-width: $tablet-width) {
+      background-image: url("../img/feraud-desktop-bg.jpg");
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/feraud-desktop-bg@2x.jpg");
+      }
+    }
+
+    @media (max-width: $mobile-width) {
+      background-image: url("../img/feraud-desktop-bg.jpg");
+      background-position: 65% 0;
+
+      @media (min-resolution: $retina-dppx) {
+        background-image: url("../img/feraud-desktop-bg@2x.jpg");
+      }
+    }
+  }
 }

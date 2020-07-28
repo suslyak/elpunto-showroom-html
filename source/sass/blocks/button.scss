@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 1px 20px;
+  font-size: 13.5px;
+  font-weight: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: $white;
+  border-radius: 8px;
+  color: $black;
+  cursor: pointer;
+
+  &:visited {
+    color: $black;
+  }
+
+  &:hover {
+    color: $gray-inc;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
