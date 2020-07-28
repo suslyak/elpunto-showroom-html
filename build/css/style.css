@@ -479,14 +479,15 @@ body {
         background-image: url("../img/feraud-desktop-bg@2x.jpg"); } }
     @media (max-width: 1399px) {
       .top-wrapper--feraud {
-        background-image: url("../img/feraud-desktop-bg.jpg"); } }
+        background-image: url("../img/feraud-desktop-bg.jpg");
+        background-position: 75% 0; } }
   @media (max-width: 1399px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1399px) and (min-resolution: 1.5dppx) {
     .top-wrapper--feraud {
       background-image: url("../img/feraud-desktop-bg@2x.jpg"); } }
     @media (max-width: 767px) {
       .top-wrapper--feraud {
         background-image: url("../img/feraud-desktop-bg.jpg");
-        background-position: 65% 0; } }
+        background-position: 75% 0; } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 1.5dppx) {
     .top-wrapper--feraud {
       background-image: url("../img/feraud-desktop-bg@2x.jpg"); } }
@@ -858,24 +859,16 @@ body {
     font-weight: normal;
     text-align: center;
     margin-bottom: 75px; }
+    @media (max-width: 767px) {
+      .brand__title h2 {
+        margin-left: 0; } }
   .brand__title img {
     width: 100%;
     display: block;
     margin-left: 13px; }
     @media (max-width: 767px) {
       .brand__title img {
-        margin: 0 auto; } }
-
-.brand__logo {
-  display: block;
-  margin-left: 13px; }
-  @media (max-width: 1399px) {
-    .brand__logo {
-      width: 290px; } }
-  @media (max-width: 767px) {
-    .brand__logo {
-      margin: 0 auto;
-      width: 260px; } }
+        margin-left: 0; } }
 
 .brand__matreials h2 {
   margin-bottom: 15px;

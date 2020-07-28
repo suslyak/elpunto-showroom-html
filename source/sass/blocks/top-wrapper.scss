@@ -185,6 +185,7 @@
 
     @media (max-width: $tablet-width) {
       background-image: url("../img/feraud-desktop-bg.jpg");
+      background-position: 75% 0;
 
       @media (min-resolution: $retina-dppx) {
         background-image: url("../img/feraud-desktop-bg@2x.jpg");
@@ -193,7 +194,7 @@
 
     @media (max-width: $mobile-width) {
       background-image: url("../img/feraud-desktop-bg.jpg");
-      background-position: 65% 0;
+      background-position: 75% 0;
 
       @media (min-resolution: $retina-dppx) {
         background-image: url("../img/feraud-desktop-bg@2x.jpg");
