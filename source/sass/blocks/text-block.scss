@@ -1,0 +1,64 @@
+.text-block {
+    width: 58%;
+    padding: 0 20px 20px;
+    font-size: 20px;
+    letter-spacing: 0.25px;
+    font-weight: normal;
+    background: rgba(255, 255, 255, .15) border-box;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+
+  @media (max-width: $tablet-width) {
+    width: 70%;
+    font-size: 18px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--just {
+    text-align: justify;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 23px 0;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    letter-spacing: normal;
+
+    &+p {
+      margin-top: 0;
+    }
+  }
+
+  p {
+    margin: 25px 0;
+  }
+
+  a {
+    color: inherit;
+
+    &:visited {
+      color: inherit;
+    }
+  }
+}
+
+.text-block__list {
+
+  @include clear-ul;
+}

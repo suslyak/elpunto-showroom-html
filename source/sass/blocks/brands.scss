@@ -43,31 +43,6 @@
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 30px;
 
-  /*&:nth-child(-n+4) {
-    margin-top: 0;
-  }*/
-
-  /*&:nth-child(4n+4) {
-    margin-right: 0;
-  }*/
-/*
-  &:last-child {
-    margin-right: 0;
-  }*/
-
-/*
-  a {
-    display: block;
-    width: 100%;
-  }
-
-  img {
-    width: 100%;
-  }*/
-
-  @media (max-width: $tablet-width) {
-  }
-
   @media (max-width: $mobile-width) {
     margin-right: 30px;
     margin-top: 30px;

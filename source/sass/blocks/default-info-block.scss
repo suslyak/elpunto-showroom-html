@@ -1,0 +1,14 @@
+.default-info-block {
+  min-height: 1125px;
+  display: flex;
+  align-items: flex-start;
+  padding: 45px 110px 96px;
+
+  @media (max-width: $tablet-width) {
+    padding: 30px 80px 96px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 30px 30px 96px;
+  }
+}
