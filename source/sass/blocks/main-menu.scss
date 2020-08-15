@@ -27,7 +27,7 @@
 .main-menu__item {
   margin-left: 45px;
   margin-bottom: 10px;
-  font-size: 23.5px;
+  font-size: 16px;
   font-weight: bold;
   letter-spacing: -0.8px;
   text-transform: uppercase;
@@ -50,13 +50,14 @@
 
 .main-menu__link {
   text-decoration: none;
-  color: $black;
+  color: $gray;
 
   &:visited {
     color: $black;
   }
 
   &[href] {
+    color: $black;
     text-decoration: underline;
 
     &:visited {

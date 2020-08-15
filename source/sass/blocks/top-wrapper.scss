@@ -2,8 +2,11 @@
   min-height: 890px;
   display: flex;
   flex-direction: column;
-
   background: url("../img/index-desktop-bg.jpg") no-repeat 50% 0%/cover $blue;
+
+  main {
+    margin: auto 0;
+  }
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/index-desktop-bg@2x.jpg");
