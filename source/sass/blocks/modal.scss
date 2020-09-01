@@ -1,0 +1,61 @@
+.modal {
+  width: 300px;
+  height: 253px;
+  display: none;
+  position: fixed;
+  top: calc((100% - 253px) / 2);
+  left: calc((100% - 300px) / 2);
+  z-index: 1001;
+  border-radius: 30px;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+
+  &--show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 0.5s;
+  }
+
+  @media (max-width: $tablet-width) {
+
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  background: url("../img/icon-close.svg") no-repeat;
+}
+
+.modal__content {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  background: $gray;
+}
+
+.modal__form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  line-height: 25px;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(-3000px);}
+    70% {transform: translateY(40px);}
+    90% {transform: translateY(-15px);}
+    100% {transform: translateY(0);}
+  }

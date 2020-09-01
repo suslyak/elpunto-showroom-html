@@ -9,6 +9,13 @@
   var menuLinkElements = menuElement.querySelectorAll('.main-menu__link');
   var sandwichElement = headerElement.querySelector('.page-header__sandwich');
   var logoElement = headerElement.querySelector('.logo');
+  var modalCallLinkElement=document.querySelector("a[href='#login']");
+  var modalElement = bodyElement.querySelector('.modal');
+  var formElement = document.querySelector('.login-form');
+  var pass_filed=formElement.querySelector("input[name='secret']");
+  var close=modalElement.querySelector(".modal__close");
+
+
   /*var formElement = document.querySelector('.form');
   var phoneInputElement = formElement.querySelector('input[type="tel"]');
   var formSubmitButton = formElement.querySelector('button[type="submit"]');
@@ -39,6 +46,28 @@
   menuElement.classList.remove('main-menu--no-js');
   sandwichElement.classList.remove('page-header__sandwich--no-js');
   logoElement.classList.remove('logo--no-js');
+
+  modalCallLinkElement.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    modalElement.classList.add('modal--show');
+    pass_filed.focus();
+  });
+
+  close.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    modalElement.classList.remove("modal--show");
+    modalCallLinkElement.focus();
+  });
+
+  window.addEventListener("keydown", function(evt) {
+    if (evt.keyCode==27) {
+      if (modalElement.classList.contains("modal--show")) {
+        evt.preventDefault();
+        modalElement.classList.remove('modal--show');
+        modalCallLinkElement.focus();
+      }
+    }
+  });
 
   var showMobileMenu = function () {
     var menuLinksElements = menuElement.querySelectorAll('a[href]');
