@@ -150,6 +150,11 @@
   img {
     margin-bottom: 10px;
   }
+
+  &--outsided {
+    margin-top: 100px;
+    border-top: 1px dashed $white;
+  }
 }
 
 .brand__materials-list {

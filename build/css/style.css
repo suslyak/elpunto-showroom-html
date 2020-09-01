@@ -905,6 +905,10 @@ body {
 .brand__matreials img {
   margin-bottom: 10px; }
 
+.brand__matreials--outsided {
+  margin-top: 100px;
+  border-top: 1px dashed #fff; }
+
 .brand__materials-list {
   position: relative;
   left: 42px;

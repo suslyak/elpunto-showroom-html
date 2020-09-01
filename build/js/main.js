@@ -6,6 +6,7 @@
   var headerElement = document.querySelector('.page-header');
   var navigationElement = headerElement.querySelector('.page-header__navigation');
   var menuElement = headerElement.querySelector('.main-menu');
+  var menuLinkElements = menuElement.querySelectorAll('.main-menu__link');
   var sandwichElement = headerElement.querySelector('.page-header__sandwich');
   var logoElement = headerElement.querySelector('.logo');
   /*var formElement = document.querySelector('.form');
@@ -125,6 +126,18 @@
 
   sandwichElement.addEventListener('click', showMobileMenu);
   customSubmitValidations.push(customRequired);
+
+  menuLinkElements.forEach(function (link) {
+    var loc = window.location.href.replace("http://","");
+
+    if ((loc.substr(loc.indexOf("/"), loc.length - loc.indexOf("/")).length > 1) && (loc.substr(loc.length - 1) == "/")) {
+      loc = loc.substr(0, loc.length - 1);
+    }
+
+    if (link.getAttribute("href") == loc.substr(loc.indexOf("/"), loc.length - loc.indexOf("/"))) {
+      link.removeAttribute("href");
+    }
+  });
 
   /*
   phoneInputElement.addEventListener('input', function () {
