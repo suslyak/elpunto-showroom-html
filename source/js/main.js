@@ -13,6 +13,7 @@
   var modalElement = bodyElement.querySelector('.modal');
   var formElement = document.querySelector('.login-form');
   var pass_filed=formElement.querySelector("input[name='secret']");
+  var formSubmitButtonElement = formElement.querySelector("button[type='submit']");
   var close=modalElement.querySelector(".modal__close");
 
 
@@ -67,6 +68,46 @@
         modalCallLinkElement.focus();
       }
     }
+  });
+
+  /*formSubmitButtonElement.addEventListener('click', function (e) {
+    e.preventDefault();
+    formSubmitButtonElement.parentElement.submit();
+  });*/
+
+  formElement.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var formObj = formElement;
+    var formURL = formObj.getAttribute("action");
+    var formData = new FormData(this);
+
+    var xhr = new XMLHttpRequest();
+    //xhr.responseType = window.settings.API_RESPONSE_TYPE;
+
+    xhr.addEventListener('load', function () {
+      if (xhr.status === 200) {
+        var response = xhr.response;
+        formObj.innerHTML = response;
+        document.location.reload();
+      } else {
+        formObj.innerHTML = 'Произошла ошибка. Статус ответа: ' + xhr.status + ' ' + xhr.statusText;
+      }
+    });
+
+    xhr.addEventListener('error', function () {
+      formObj.innerHTML = 'Произошла ошибка соединения';
+    });
+
+    xhr.addEventListener('timeout', function () {
+      formObj.innerHTML = 'Запрос не успел выполниться за ' + xhr.timeout + 'мс';
+    });
+
+    xhr.timeout = 10000;
+
+    xhr.open('post', formURL, true);
+    //xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded')
+    xhr.send(formData);
+
   });
 
   var showMobileMenu = function () {

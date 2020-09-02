@@ -1402,6 +1402,8 @@ body {
     text-align: center;
     letter-spacing: 0.15px;
     text-transform: uppercase; }
+  .login-form span {
+    text-align: center; }
   .login-form input,
   .login-form textarea {
     width: 100%;
