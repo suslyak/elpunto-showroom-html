@@ -204,7 +204,7 @@
   customSubmitValidations.push(customRequired);
 
   menuLinkElements.forEach(function (link) {
-    var loc = window.location.href.replace("https://","");
+    var loc = window.location.href.replace("http://","");
 
     if ((loc.substr(loc.indexOf("/"), loc.length - loc.indexOf("/")).length > 1) && (loc.substr(loc.length - 1) == "/")) {
       loc = loc.substr(0, loc.length - 1);
