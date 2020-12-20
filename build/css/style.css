@@ -1327,7 +1327,8 @@ body {
   width: 15px;
   height: 15px;
   cursor: pointer;
-  background: url("../img/icon-close.svg") no-repeat; }
+  background: url("../img/icon-close.svg") no-repeat;
+  z-index: 1; }
 
 .modal__content {
   display: -webkit-box;
@@ -1430,3 +1431,20 @@ body {
   .login-form button {
     width: 100%;
     margin-top: 30px; }
+
+.link {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: underline; }
+  .link:visited {
+    color: #000; }
+  .link:hover {
+    color: #fff; }
+  .link:active {
+    opacity: 0.5; }
+  @media (max-width: 1399px) {
+    .link {
+      font-size: 12px; } }

@@ -78,6 +78,7 @@
   formElement.addEventListener('submit', function(e) {
     e.preventDefault();
     var formObj = formElement;
+    var formContainer = formElement.querySelector(".login-form__fields");
     var formURL = formObj.getAttribute("action");
     var formData = new FormData(this);
 
@@ -87,10 +88,15 @@
     xhr.addEventListener('load', function () {
       if (xhr.status === 200) {
         var response = xhr.response;
-        formObj.innerHTML = response;
+        formContainer.innerHTML = response;
         document.location.reload();
       } else {
-        formObj.innerHTML = 'Произошла ошибка. Статус ответа: ' + xhr.status + ' ' + xhr.statusText;
+        if (xhr.status === 401) {
+          var response = xhr.response;
+          formContainer.innerHTML = response;
+        } else {
+          formObj.innerHTML = 'Произошла ошибка. Статус ответа: ' + xhr.status + ' ' + xhr.statusText;
+        }
       }
     });
 

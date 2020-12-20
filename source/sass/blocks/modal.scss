@@ -33,6 +33,7 @@
   height: 15px;
   cursor: pointer;
   background: url("../img/icon-close.svg") no-repeat;
+  z-index: 1;
 }
 
 .modal__content {

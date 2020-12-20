@@ -155,11 +155,13 @@
     </div>
   </footer>
   <div class="modal">
+    <span class="modal__close"></span>
     <div class="modal__content">
-      <span class="modal__close"></span>
       <form class="login-form" action="/secret/" method="POST">
-        <label for="secret">Пароль</label>
-        <input id="secret" type="password" name="secret" value="" placeholder="">
+        <div class="login-form__fields">
+          <label for="secret">Пароль</label>
+          <input id="secret" type="password" name="secret" value="" placeholder="">
+        </div>
         <button class="button" type="submit">Войти</button>
       </form>
     </div>
