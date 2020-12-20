@@ -1,6 +1,6 @@
 .text-block {
     width: 58%;
-    padding: 0 20px 20px;
+    padding: 20px 20px 20px;
     font-size: 20px;
     letter-spacing: 0.25px;
     font-weight: normal;
@@ -25,6 +25,13 @@
 
   &--just {
     text-align: justify;
+  }
+
+  &--no-pallete {
+    background: none;
+    border-radius: 0;
+    text-shadow: none;
+    backdrop-filter: none;
   }
 
   h2 {

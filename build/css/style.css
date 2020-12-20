@@ -906,8 +906,7 @@ body {
   margin-bottom: 10px; }
 
 .brand__matreials--outsided {
-  margin-top: 100px;
-  border-top: 1px dashed #fff; }
+  margin-top: 100px; }
 
 .brand__materials-list {
   position: relative;
@@ -1237,7 +1236,7 @@ body {
 
 .text-block {
   width: 58%;
-  padding: 0 20px 20px;
+  padding: 20px 20px 20px;
   font-size: 20px;
   letter-spacing: 0.25px;
   font-weight: normal;
@@ -1258,6 +1257,12 @@ body {
     color: #fff; }
   .text-block--just {
     text-align: justify; }
+  .text-block--no-pallete {
+    background: none;
+    border-radius: 0;
+    text-shadow: none;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none; }
   .text-block h2 {
     font-size: 25px;
     font-weight: bold;
