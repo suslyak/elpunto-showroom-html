@@ -136,15 +136,16 @@
   h3,
   h4 {
     margin: 0;
+    padding: 3px 10px;
     font-size: 12px;
     font-weight: normal;
     letter-spacing: -0.62px;
     line-height: 19px;
     text-transform: uppercase;
-    background: rgba(255, 255, 255, .3) border-box;
-    border-radius: 4px;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, .3);
-    backdrop-filter: blur(5px);
+    background: $white border-box;
+    border-radius: 0;
+    text-shadow: none;
+    backdrop-filter: none;
   }
 
   img {

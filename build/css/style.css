@@ -891,16 +891,17 @@ body {
 .brand__matreials h3,
 .brand__matreials h4 {
   margin: 0;
+  padding: 3px 10px;
   font-size: 12px;
   font-weight: normal;
   letter-spacing: -0.62px;
   line-height: 19px;
   text-transform: uppercase;
-  background: rgba(255, 255, 255, 0.3) border-box;
-  border-radius: 4px;
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px); }
+  background: #fff border-box;
+  border-radius: 0;
+  text-shadow: none;
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none; }
 
 .brand__matreials img {
   margin-bottom: 10px; }
